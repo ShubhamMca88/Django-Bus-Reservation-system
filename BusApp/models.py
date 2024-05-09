@@ -32,8 +32,7 @@ class Book(models.Model):
     BOOKED = 'B'
     CANCELLED = 'C'
 
-    TICKET_STATUSES = ((BOOKED, 'Booked'),
-                       (CANCELLED, 'Cancelled'),)
+    TICKET_STATUSES = ((BOOKED, 'Booked'),(CANCELLED, 'Cancelled'),)
     email = models.EmailField()
     name = models.CharField(max_length=30)
     userid =models.DecimalField(decimal_places=0, max_digits=2)
